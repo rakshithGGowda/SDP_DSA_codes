@@ -1,4 +1,4 @@
-   struct node* next;#include<stdio>
+struct node* next;#include<stdio>
 struct node
 {
 struct  node *next=NULL;
@@ -61,7 +61,7 @@ void reverse(struct node** head_ref) {
 void traversal() {
    struct node *ptr = head;
    while(ptr != NULL) {
-      printf("(%d,%d) ",ptr->key,ptr->data);
+      printf("(%d,%d) ",ptr->data);
       ptr = ptr->next;
    }
 
